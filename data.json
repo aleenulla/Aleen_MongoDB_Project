@@ -1,0 +1,35 @@
+{
+    "name": "users",
+    "properties": {
+      "users_id": { "type": "ObjectId" },
+      "username": { "type": "string" },
+      "email": { "type": "string" },
+      "password": { "type": "string" }
+    }
+  }
+  
+
+  {
+    "name": "posts",
+    "properties": {
+      "posts_id": { "type": "ObjectId" },
+      "title": { "type": "string" },
+      "content": { "type": "string" },
+      "image": { "type": "string" },
+      "username": { "type": "string"},
+      "location": { "type": "string" },
+      "likes": { "type": "Array" },
+    }
+  }
+  
+
+  {
+    "name": "comments",
+    "properties": {
+      "comments_id": { "type": "ObjectId" },
+      "content": { "type": "string" },
+      "username": { "type": "ObjectId" },
+      "post_id": { "type": "ObjectId" },
+    }
+  }
+  
